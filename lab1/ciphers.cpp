@@ -90,6 +90,7 @@ string CSK_decrypt(const string &msg, const string &word) {
 string VGN_encrypt(const string &msg, const string &key) {
     string res = msg;
     int key_len = key.size();
+    if(key_len == 0) return res;
 
     for(int i = 0; i < (int)msg.size(); i++) {
 
@@ -111,6 +112,7 @@ string VGN_encrypt(const string &msg, const string &key) {
 string VGN_decrypt(const string &msg, const string &key) {
     string res = msg;
     int key_len = key.size();
+    if(key_len == 0) return res;
 
     for(int i = 0; i < (int)msg.size(); i++) {
 
@@ -125,5 +127,3 @@ string VGN_decrypt(const string &msg, const string &key) {
 
     return res;
 }
-
-
