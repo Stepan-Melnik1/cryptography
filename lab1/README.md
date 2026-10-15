@@ -92,7 +92,7 @@ g++ main.cpp ciphers.cpp vars.cpp galois.cpp expmod.cpp invmod.cpp logdis.cpp vg
 Зашифровать содержимое текстового файла (`data.txt`):
 ```bash
 ./crypto -Fvgb data.txt "Key"
-
+```
 ## 📚 Подробное описание функций и принципов работы
 
 ### 1. Классические шифры (`ciphers.cpp`)
